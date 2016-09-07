@@ -32,13 +32,12 @@ public class App {
       "<body>" +
        "<h1>Favorite Traveling Photos</h1>" +
           "<ul>" +
-            "<li><img src='/images/canyon.jpg' alt='A photo of a canyon.'/></li>" +
-            "<li><img src='/images/city.jpg' alt='A photo of a bridge.'/></li>" +
-            "<li><img src='/images/mountains.jpg' alt='A photo of a mountain.'/></li>" +
+            "<li><img src='/images/foggymountain.jpeg' alt='A photo of a mountain.'/></li>" +
+            "<li><img src='/images/rockycoast.jpeg' alt='A photo of a a rocky beach.'/></li>" +
           "</ul>" +
       "</body>" +
       "</html>"
-  );
-  
+    );
+
   }
 }
