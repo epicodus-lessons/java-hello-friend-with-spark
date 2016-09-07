@@ -3,7 +3,7 @@ import static spark.Spark.*;
 public class App {
   public static void main(String[] args) {
     staticFileLocation("/public");
-    get("/hello", (request, response) ->
+    get("/", (request, response) ->
        "<!DOCTYPE html>" +
         "<html>" +
         "<head>" +
@@ -19,6 +19,7 @@ public class App {
           "<p>Looking forward to seeing you soon. I'll bring you back a souvenir. </p>" +
           "<p>Cheers,</p>" +
           "<p>Travel Enthusiast Jane</p>" +
+          "<p><a href='/favorite_photos' >P.S. Check out my favorite travel photos here.</a></p>" +
         "</body>" +
       "</html>"
    );
