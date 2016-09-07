@@ -9,7 +9,6 @@ public class App {
     get("/", (request, response) -> {
       return new ModelAndView(new HashMap(), "templates/hello.vtl");
     }, new VelocityTemplateEngine());
-   );
 
    get("/favorite_photos", (request, response) ->
     "<!DOCTYPE html>" +
