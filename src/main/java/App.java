@@ -7,17 +7,18 @@ public class App {
 
   public static void main(String[] args) {
     staticFileLocation("/public");
+    String layout = "templates/layout.vtl";
 
     get("/", (request, response) -> {
       Map model = new HashMap();
       model.put("template", "templates/hello.vtl" );
-      return new ModelAndView(model, "templates/layout.vtl");
+      return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
     get("/favorite_photos", (request, response) -> {
       Map model = new HashMap();
       model.put("template", "templates/favorite_photos.vtl" );
-      return new ModelAndView(model, "templates/layout.vtl");
+      return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
   }
