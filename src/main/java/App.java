@@ -11,13 +11,13 @@ public class App {
     String layout = "templates/layout.vtl";
 
     get("/", (request, response) -> {
-      Map model = new HashMap();
+      Map<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/hello.vtl" );
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
     get("/favorite_photos", (request, response) -> {
-      Map model = new HashMap();
+      Map<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/favorite_photos.vtl" );
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
